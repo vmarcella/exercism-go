@@ -7,7 +7,7 @@ func String(inputStr string) string {
     runeSlice := []rune(inputStr)
     runeSliceLength := len(runeSlice)
     
-    // Swap the runeslice in place (Keep swapping the first and last element)
+    // Swap the runeslice in place (Keep swapping the elements from each side with eachother)
     for i := 0; i < runeSliceLength / 2; i++ {
         runeSlice[i], runeSlice[runeSliceLength-1-i] = runeSlice[runeSliceLength-1-i], runeSlice[i]
     }
