@@ -1,11 +1,16 @@
 package reverse
 
 func String(inputStr string) string {
-    var outputStr []byte;
-
-    for i := len(inputStr) - 1; i >= 0; i-- {
-        outputStr = append(outputStr, inputStr[i])
+   
+    // Create a rune slice from the input string
+    // Store the length of the runeSlice
+    runeSlice := []rune(inputStr)
+    runeSliceLength := len(runeSlice)
+    
+    // Swap the runeslice in place (Keep swapping the first and last element)
+    for i := 0; i < runeSliceLength / 2; i++ {
+        runeSlice[i], runeSlice[runeSliceLength-1-i] = runeSlice[runeSliceLength-1-i], runeSlice[i]
     }
 
-    return string(outputStr)
+    return string(runeSlice)
 }
