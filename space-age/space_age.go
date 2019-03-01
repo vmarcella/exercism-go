@@ -1,6 +1,6 @@
 package space
 
-// Map the amount of time in seconds to earth years
+// Age Map the amount of time in seconds to earth years
 func Age(age float64, planet string) float64 {
 	// Map all the planets to their orbital period in seconds
 	planetMap := map[string]float64{

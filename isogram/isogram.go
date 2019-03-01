@@ -2,6 +2,7 @@ package isogram
 
 import "unicode"
 
+// IsIsogram checks if a string is an isogram
 func IsIsogram(inputStr string) bool {
 	// Create a map as a pseudo set
 	set := make(map[rune]bool)

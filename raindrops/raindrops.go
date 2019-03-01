@@ -2,6 +2,7 @@ package raindrops
 
 import "strconv"
 
+// Convert coverts numbers into raindrops sound
 func Convert(num int) string {
 	/*
 	   Convert the number into raindrop sounds if the raindrop is divisble by

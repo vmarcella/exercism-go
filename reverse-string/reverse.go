@@ -1,5 +1,6 @@
 package reverse
 
+// String revereses a string
 func String(inputStr string) string {
 
 	// Create a rune slice from the input string

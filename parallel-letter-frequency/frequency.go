@@ -22,7 +22,7 @@ func cFrequency(s string, channel chan FreqMap) {
 	channel <- m
 }
 
-// Concurrent frequency go test -v --bench . --benchmem
+// ConcurrentFrequency gets the frequency of words that occurs in strings concurrently
 func ConcurrentFrequency(strings []string) FreqMap {
 	// Create the output channel and map
 	var outputChannel = make(chan FreqMap)

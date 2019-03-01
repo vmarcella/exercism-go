@@ -1,5 +1,6 @@
 package strand
 
+// ToRNA maps RNA to it's complement
 func ToRNA(dna string) string {
 	// Create RNA mapping
 	RNAComplement := map[rune]rune{

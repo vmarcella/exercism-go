@@ -1,6 +1,6 @@
 package diffsquares
 
-// Calculate the square of the entire sum
+// SquareOfSum Calculate the square of the entire sum
 func SquareOfSum(integer int) int {
 	sum := 0
 	for i := 1; i < integer+1; i += 1 {
@@ -10,7 +10,7 @@ func SquareOfSum(integer int) int {
 	return sum * sum
 }
 
-// Calculate the sum of the squares
+// SumOfSquares Calculate the sum of the squares
 func SumOfSquares(integer int) int {
 	sum := 0
 
@@ -21,7 +21,7 @@ func SumOfSquares(integer int) int {
 	return sum
 }
 
-// difference of the square of sums and the sum of the squares
+// Difference difference of the square of sums and the sum of the squares
 func Difference(integer int) int {
 	squareOfSum := SquareOfSum(integer)
 	sumOfSquare := SumOfSquares(integer)

@@ -3,6 +3,7 @@ package luhn
 import "strconv"
 import "strings"
 
+// Valid checks if a luhn is valid or not
 func Valid(luhn string) bool {
 	// remove all blank characters
 	luhn = strings.Replace(luhn, " ", "", -1)
@@ -20,7 +21,7 @@ func Valid(luhn string) bool {
 
 	// Iterate over the luhn backwards to create the sum
 	// Double every other number starting with the second number iterated over
-	for index := len(luhn) - 1; index >= 0; index -= 1 {
+	for index := len(luhn) - 1; index >= 0; index-- {
 		currentNum, err := strconv.Atoi(string(luhn[index]))
 		if err == nil {
 			if double {
