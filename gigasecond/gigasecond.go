@@ -1,4 +1,5 @@
 package gigasecond
+
 // Calculate the moment when someone had lived for a gigasecond
 
 // import path for the time package from the standard library

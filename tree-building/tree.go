@@ -1,6 +1,6 @@
 package tree
 
-// Node represents a node in the tree 
+// Node represents a node in the tree
 type Node struct {
 	ID       int
 	Children []Node

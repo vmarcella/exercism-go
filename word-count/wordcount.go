@@ -6,7 +6,7 @@ import "fmt"
 // Frequency maps strings to integers
 type Frequency map[string]int
 
-// WordCount gets the word count of a given string 
+// WordCount gets the word count of a given string
 func WordCount(sentence string) Frequency {
 	fmt.Println(sentence)
 	sentence = strings.Replace(sentence, ",", " ", -1)

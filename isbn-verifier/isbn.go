@@ -29,12 +29,12 @@ func IsValidISBN(isbn string) bool {
 
 	if len(numList) < 10 || len(numList) > 10 {
 		return false
-    }
-    counter := 10
-    sum := 0
-    for i := 0; i < len(numList); i++ {
-        sum += numList[i] * counter
-        counter--
-    }
-    return sum%11 == 0
+	}
+	counter := 10
+	sum := 0
+	for i := 0; i < len(numList); i++ {
+		sum += numList[i] * counter
+		counter--
+	}
+	return sum%11 == 0
 }
