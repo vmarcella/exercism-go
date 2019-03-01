@@ -3,24 +3,24 @@ package hamming
 import "errors"
 
 func Distance(a, b string) (int, error) {
-    /*
-        Find the hamming distance between two strands of DNA
+	/*
+	   Find the hamming distance between two strands of DNA
 
-        Arguments:
-            :a: strand of DNA of equal length to b
-            :b: strand of DNA of equal length to a
-    */
-    if len(a) != len(b) {
-        return 0, errors.New("DNA is not of equal length") 
-    }
+	   Arguments:
+	       :a: strand of DNA of equal length to b
+	       :b: strand of DNA of equal length to a
+	*/
+	if len(a) != len(b) {
+		return 0, errors.New("DNA is not of equal length")
+	}
 
-    distance := 0
+	distance := 0
 
-    // Compare each nucleotide of the DNA strands
-    for i := 0; i < len(a); i++ {
-        if a[i] != b[i] {
-            distance += 1
-        }
-    }
-    return distance, nil
+	// Compare each nucleotide of the DNA strands
+	for i := 0; i < len(a); i++ {
+		if a[i] != b[i] {
+			distance += 1
+		}
+	}
+	return distance, nil
 }

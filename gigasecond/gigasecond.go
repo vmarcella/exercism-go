@@ -7,7 +7,7 @@ import "time"
 // Calculate the moment someone has lived for a gigasecond
 // Given a starting date
 func AddGigasecond(t time.Time) time.Time {
-    duration := time.Duration(1000000000000000000)
-    t = t.Add(duration)
+	duration := time.Duration(1000000000000000000)
+	t = t.Add(duration)
 	return t
 }
